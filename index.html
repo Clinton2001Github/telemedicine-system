@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeleMedEase - Telemedicine App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form input, form select, form button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TeleMedEase</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#login">Login</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#book">Book Appointment</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <div class="section" id="home">
+            <h2>Welcome to TeleMedEase</h2>
+            <p>Connecting Patients and Doctors for a seamless healthcare experience.</p>
+        </div>
+
+        <!-- Login Section -->
+        <div class="section" id="login">
+            <h2>Login</h2>
+            <form>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Dashboard Section -->
+        <div class="section" id="dashboard">
+            <h2>Dashboard</h2>
+            <h3>Your Appointments:</h3>
+            <ul>
+                <li>Appointment with Dr. Smith on 2024-11-30</li>
+                <li>Appointment with Dr. Jane on 2024-12-02</li>
+            </ul>
+        </div>
+
+        <!-- Book Appointment Section -->
+        <div class="section" id="book">
+            <h2>Book an Appointment</h2>
+            <form>
+                <select name="doctor_id">
+                    <option value="1">Dr. Smith</option>
+                    <option value="2">Dr. Jane</option>
+                </select>
+                <input type="text" name="date" placeholder="YYYY-MM-DD" required>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
+
+
